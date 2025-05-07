@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+
+}
+
+main {
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width:426px) {
+    body {
+        padding: 50px 66px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding: 150px 200px;
+    }
+}
+
+img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Young Serif";
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: "Young Serif";
+    font-weight: 200;
+    color: hsl(14, 45%, 36%);
+}
+
+p {
+    font-size: 16px;
+}
+
+.preparation-time-container {
+    padding: 20px;
+    background: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+
+    & h3 {
+        color: hsl(332, 51%, 32%);
+    }
+
+    & ul {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.ingredients-list {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divider {
+    height: 1px;
+    background: hsla(32, 10%, 34%, 0.233);
+    margin-top: 20px;
+}
+
+ol {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & li {
+        margin-left: 22px;
+    }
+
+    & span {
+        color: hsl(30, 10%, 34%);
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 400;
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.233);
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 30px;
+    width: 400px;
+}
+
+td {
+    font-weight: 600;
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.233);
+    color: hsl(14, 45%, 36%);
+}
+
+tr:last-of-type td, tr:last-of-type th {
+    border: 0;
+}
